@@ -8,25 +8,38 @@
       body {
         margin: 0;
       }
-    </style>
-  </head>
-  <body>
-    <div style="background-color: #f1f1f1; text-align: center; padding: 40px">
-      <img
-        src="pic/mvbs.png"
-        alt="mnbslogo"
-        width="80px"
-        height="80px"
-      />
-    </div>
-    <div
-      style="
+      div.sw {
+        background-color: rgb(248, 233, 236);
+        margin: 10px;
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+        background-clip: padding-box;
+      }
+      div.z {
         max-width: 700px;
         margin: 30px auto;
         padding: 15px;
         line-height: 1.7;
-      "
-    >
+        outline: pink dotted thick;
+        background: rgb(245, 224, 227);
+        background-clip: content-box;
+      }
+      img {
+        outline: pink dotted thin;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sw">
+      <img
+        src="https://raw.githubusercontent.com/louquan/task/2266180d0139f1506202a814950a3916150f73ce/pic/mvbs.png"
+        alt="kangwenchang"
+        width="80px"
+        height="80px"
+      />
+    </div>
+    <div class="z">
       <p>跟着元岛小程序，学习编程用的初级作业，简单的排版页面。</p>
       <p>
         希望早日掌握
@@ -36,14 +49,7 @@
       </p>
       <p>读书千遍，不如实战一次。日拱一卒，功不唐捐。</p>
     </div>
-    <div
-      style="
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 40px;
-        font-size: 12px;
-      "
-    >
+    <div class="sw">
       <p>米女白水新手站</p>
       <a href="https://louquan.github.io/task/">返回首页</a>
     </div>
