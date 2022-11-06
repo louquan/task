@@ -9,17 +9,18 @@
         margin: 0;
       }
       div.sw {
+        max-width: 540px;
         background-color: rgb(248, 233, 236);
-        margin: 10px;
+        margin: 10px auto;
         text-align: center;
         padding: 40px;
         font-size: 12px;
         background-clip: padding-box;
       }
       div.z {
-        max-width: 700px;
-        margin: 30px auto;
-        padding: 15px;
+        max-width: 600px;
+        margin: 10px auto;
+        padding: 5px;
         line-height: 1.7;
         outline: pink dotted thick;
         background: rgb(245, 224, 227);
@@ -28,12 +29,47 @@
       img {
         outline: pink dotted thin;
       }
+      #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 10px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 15px 15px 0;
+      }
+
+      #mySidenav a:hover {
+        left: 0;
+      }
+
+      #about {
+        top: 20px;
+        background-color: #4caf50;
+      }
+
+      #blog {
+        top: 80px;
+        background-color: #2196f3;
+      }
+
+      #projects {
+        top: 140px;
+        background-color: #f44336;
+      }
+
+      #contact {
+        top: 200px;
+        background-color: #555;
+      }
     </style>
   </head>
   <body>
     <div class="sw">
       <img
-        src="https://raw.githubusercontent.com/louquan/task/e0c728209443361c667dceb284ecad58a736405c/pic/mvbs.png"
+        src="https://raw.githubusercontent.com/louquan/task/2266180d0139f1506202a814950a3916150f73ce/pic/mvbs.png"
         alt="lou"
         width="80px"
         height="80px"
@@ -49,6 +85,13 @@
       </p>
       <p>读书千遍，不如实战一次。日拱一卒，功不唐捐。</p>
     </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="#" id="about">About</a>
+      <a href="#" id="blog">Blog</a>
+      <a href="#" id="projects">Projects</a>
+      <a href="#" id="contact">Contact</a>
+    </div>
+
     <div class="sw">
       <p>米女白水新手站</p>
       <a href="https://louquan.github.io/task/">返回首页</a>
